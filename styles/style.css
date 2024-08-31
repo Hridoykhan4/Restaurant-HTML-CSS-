@@ -242,4 +242,7 @@ text-align: center;
         width: 100%;
         border: none;
     }
+    .img-w{
+      width: 100%;
+    }
 }
