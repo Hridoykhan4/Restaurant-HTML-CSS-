@@ -8,7 +8,70 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Header start */
+header{
+  background-color: #24a19c;
+  padding: 0% 1%;
+  text-align: center;
+}
+
+.logo-container{
+  padding: 5%;
+}
+
+.logo-div{
+    line-height: 4rem;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+
+.logo-div i{
+  color: white;
+  border-radius: 50%;
+  border: 2px solid white;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 70px;
+}
+
+
+
+nav ul li{
+  display: block;
+}
+
+nav ul li a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: 0.4s;
+  line-height: 70px;
+}
+
+nav ul li a:hover{
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+
 
 .hero {
   height: 650px;
@@ -26,16 +89,16 @@
 }
 
 .hero .hero-content {
-  width: 685px;
+  width: 60%;
   text-align: center;
 }
 
 .hero-title {
   color: rgb(255, 255, 255);
   font-family: Work Sans;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 600;
-  line-height: 38px;
+  line-height: 2.2em;
   letter-spacing: 0%;
   text-align: center;
   opacity: 0.8;
@@ -58,20 +121,21 @@
 }
 
 .btn {
-  padding: 14px 15px;
+  padding: 1rem;
   background-color: rgb(82, 195, 3);
   color: white;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 0.8rem;
   border: none;
   border-radius: 1rem;
-  line-height: 16px;
+  line-height: 1rem;
 }
 
 /* Card Section */
 #card-box {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 80px auto;
+  padding: 0.7rem;
 }
 
 
@@ -194,6 +258,60 @@ text-align: center;
 }
 
 
+/* Another Banner */
+#banner-section{
+  background-image: url(../assets/banner-image.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+}
+
+.new-banner-content{
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new-banner-content h1{
+  /* width: 100%; */
+  text-align: center;
+  background: rgba(255, 255, 0, 0.884);
+  margin: 15px auto;
+  font-size: 3rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
+.new-banner-content p{
+  width: 40%;
+  text-align: center;
+  color: white;
+  display: inline;
+  font-size: 1.5rem;
+  margin: 1rem auto;
+  background: rgb(0, 128, 0);
+}
+
+.btn-order{
+  padding: 0.6rem;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 5px;
+  background: rgb(0, 128, 0);
+  text-transform: uppercase;
+  color: white;
+  transition: 0.4s;
+}
+
+.btn-order:hover{
+  transform: scale(1.2);
+}
+
+
 /* Card Extra */
 .card-extra{
     display: flex;
@@ -213,6 +331,29 @@ text-align: center;
     margin: 80px auto;
 }
 
+/* About updated start */
+#updated-about{
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#updated-about h3{
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.6rem;
+  font-weight: bolder;
+}
+
+#updated-about p{
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.6em;
+  width: 60%;
+}
 
 .good-food{
   margin: 0;
@@ -224,6 +365,53 @@ text-align: center;
   background-color: rgb(247, 241, 234);
  padding: 20px;
  bottom: 0;
+}
+
+/* Food menu-starts */
+
+.card-new-parent{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  gap: 1rem;
+}
+
+#menu-section{
+  padding: 2%;
+}
+
+.card-new{
+  text-align: center;
+  transition: 0.4s;
+  height: 100%;
+  width: 100%;
+}
+
+/* .card-new:hover{
+  transform: scale(1.1);
+} */
+
+.card-element img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.item-description{
+  background: rgb(165, 164, 164);
+}
+
+.item-description h3{
+  background-color: green;
+  padding: 0.6rem;
+  color: white;
+}
+
+.item-description > p{
+  font-size: 0.8rem;
+  padding: 0.6rem;
+  font-weight: bold;
 }
 
 
@@ -244,5 +432,21 @@ text-align: center;
     }
     .img-w{
       width: 100%;
+    }.hero .hero-content{
+      width: 95%;
+    }.new-banner-content p{
+      width: 70%;
+    }.new-banner-content{
+      padding: 1rem;
+    }.card-new:hover{
+      pointer-events: none;
+    }.card-new-parent{
+      flex-direction: column;
+    }.card-new{
+      width: 90%;
+      margin: 1rem auto;
+    }#updated-about p{
+      width: 90%;
+      text-align: justify;
     }
-}
+  }
